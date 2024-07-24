@@ -1,0 +1,26 @@
+.github {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  scroll-margin: 8em;
+}
+
+.github > div {
+  display: flex;
+  gap: 1rem;
+}
+@media (max-width: 950px) {
+  .github > div > img {
+    width: 15em;
+  }
+}
+@media (max-width: 750px) {
+  .github > div > img {
+    width: 80vw;
+  }
+  .github > div {
+    flex-direction: column;
+    gap: 0;
+  }
+}
